@@ -3,8 +3,18 @@ import api from "./api"
 
 
 function App() {
+
+  const clicado = async () => {
+    try {
+      const {data} = await api.get("/")
+      console.log(data)
+    } catch (error) {
+      console.error(error)
+    }
+  }
+
   return (
-    <p>OIOIOI</p>
+    <button onClick={clicado}>CLICA</button>
   );
 }
 
