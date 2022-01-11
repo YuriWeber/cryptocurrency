@@ -1,1 +1,6 @@
 @import "./main.css";
+@import "./colors.css";
+@import "./components/buttons.css";
+@import "./components/container.css";
+@import "./header.css";
+@import "./crypto-info.css";

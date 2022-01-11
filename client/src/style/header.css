@@ -1,0 +1,25 @@
+header {
+  width: 100%;
+  height: 50px;
+  padding: 5px 0px 5px 0px;
+  background-color: rgb(var(--header-bg));
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  margin-left: 15px;
+  color: rgb(var(--main-text));
+}
+
+.converter {
+  margin-right: 15px;
+}
+
+.converter-text {
+  color: rgb(var(--main-text));
+  font-size: 1.2rem;
+  margin-right: 5px;
+}

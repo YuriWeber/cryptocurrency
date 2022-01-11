@@ -1,20 +1,13 @@
 import "./style/imports.css"
-import api from "./api"
-
+import Main from "./crypto/Main";
+import Header from "./crypto/Header";
 
 function App() {
-
-  const clicado = async () => {
-    try {
-      const {data} = await api.get("/")
-      console.log(data)
-    } catch (error) {
-      console.error(error)
-    }
-  }
-
   return (
-    <button onClick={clicado}>CLICA</button>
+    <>
+      <Header />
+      <Main />
+    </>
   );
 }
 

@@ -13,13 +13,14 @@ const api = axios.create({
 
 app.use(cors())
 
-app.get("/", async (req, res) => {
+app.get("/getData", async (req, res) => {
+    const params = req.query
     try {
-        // pedi as últimas informações de 9 moedas para a api
+        // pede as últimas informações de 9 moedas para a api
         const { data } = await api.get('cryptocurrency/quotes/latest', {
                                 params: {
-                                    'id': '1,2010,4030,3794,1027,2,4172,5426,52',
-                                    'convert': 'USD'
+                                    'id': params.crypto,
+                                    'convert': params.converter
                                 }
                             })
         
