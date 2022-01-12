@@ -1,56 +1,12 @@
 import { FaRedo } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
+import CryptoButton from "./CryptoButtons";
 
 export default function Main() {
     return (
         <div className="main-container">
             <section className="button-container">
-                <button className="btn" id="bitcoin-btn">
-                    <img src="/images/bitcoin.png" alt="bitcoin" className="crypto-img"/>
-                    <p className="crypto-name">Bitcoin</p>
-                </button>
-
-                <button className="btn" id="litecoin-btn">
-                    <img src="/images/litecoin.png" alt="litecoin" className="crypto-img"/>
-                    <p className="crypto-name">Litecoin</p>
-                </button>
-
-                <button className="btn" id="xrp-btn">
-                    <img src="/images/xrp.png" alt="xrp" className="crypto-img"/>
-                    <p className="crypto-name">XRP</p>
-                </button>
-
-                <button className="btn" id="ethereum-btn">
-                    <img src="/images/ethereum.png" alt="ethereum" className="crypto-img"/>
-                    <p className="crypto-name">Ethereum</p>
-                </button>
-
-                <button className="btn" id="cardano-btn">
-                    <img src="/images/cardano.png" alt="cardano" className="crypto-img"/>
-                    <p className="crypto-name">Cardano</p>
-                </button>
-
-                <button className="btn" id="cosmos-btn">
-                    <img src="/images/cosmos.png" alt="cosmos" className="crypto-img"/>
-                    <p className="crypto-name">Cosmos</p>
-                </button>
-
-                <button className="btn" id="algorand-btn">
-                    <img src="/images/algorand.png" alt="algorand" className="crypto-img"/>
-                    <p className="crypto-name">Algorand</p>
-                </button>
-
-                <button className="btn" id="Terra-btn">
-                    <img src="/images/Terra.png" alt="Terra" className="crypto-img"/>
-                    <p className="crypto-name">Terra</p>
-                </button>
-
-                <button className="btn" id="solana-btn">
-                    <img src="/images/solana.png" alt="solana" className="crypto-img"/>
-                    <p className="crypto-name">Solana</p>
-                </button>
-
-
+                <CryptoButton />
             </section>
             <aside className="info-container">
                 
