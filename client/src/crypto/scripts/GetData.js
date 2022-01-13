@@ -12,7 +12,7 @@ export default async function GetData(crypto, converter) {
           converter: converter
         }
       })
-      return data
+      return data[0]
     } catch (error) {
       return console.error(error)
     }
