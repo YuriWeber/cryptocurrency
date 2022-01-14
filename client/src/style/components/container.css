@@ -14,9 +14,9 @@
 }
 
 .info-container {
-  width: 300px;
+  width: 320px;
   height: 250px;
-  padding-bottom: 25px;
+  padding-bottom: 40px;
   border-radius: 10%;
   display: flex;
   align-items: flex-start;
