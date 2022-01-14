@@ -20,13 +20,13 @@ Um simples sistema utilizando a api CoinMarketCap para fazer a conversão de cri
     $ npm run dev
 
 ## TECNOLOGIAS
-  ReacJS
-    Axios
-    React-icons
-    React-redux
+  ReacJS\
+    Axios\
+    React-icons\
+    React-redux\
     Redux
    
-  Node.js
-    Axios
-    Cors
+  Node.js\
+    Axios\
+    Cors\
     Express
