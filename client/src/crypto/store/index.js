@@ -15,6 +15,8 @@ function reducer(state = initialState, action) {
                     return { ...state, converter: action.converter, symbol: "R$"}
                 case "BTC":
                     return { ...state, converter: action.converter, symbol: "BTC"}
+                default:
+                    return { ...state, converter: "USD", symbol: "$"}
             }
     }
 

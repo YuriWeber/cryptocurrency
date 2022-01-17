@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require('cors')
 const axios = require('axios')
 
-const port = 3001
+const port = 3031
 const app = express()
 
 // define a url e a chave da api

@@ -8,6 +8,7 @@ import GetData from "./scripts/GetData";
 function Main({ converter }) {
     const [crypto, setCrypto] = useState()
     const [timer, setTimer] = useState({minute: 0, changer: false})
+    // lista de timeouts para poder encerra-los
     const timeouts = []
 
 

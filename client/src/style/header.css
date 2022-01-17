@@ -23,3 +23,9 @@ header {
   font-size: 1.2rem;
   margin-right: 5px;
 }
+
+@media (max-width: 400px) {
+  .title {
+    font-size: 1.8rem;
+  }
+}
