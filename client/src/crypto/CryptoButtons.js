@@ -1,8 +1,36 @@
-export default function CryptoButton({ cryptoData }) {
-    // objeto a ser usada para a criação dos botões
-    const cryptos = {"bitcoin": 1, "litecoin": 2, "xrp": 52, "ethereum": 1027,"cardano": 2010, "cosmos": 3794,
-                    "algorand": 4030, "terra": 4172, "solana": 5426}
+import { useEffect, useState } from "react";
+import { cryptos } from "./cryptos"
 
+export default function CryptoButton({ cryptoData }) {
+    const [windowWidth, setWindowWidth] = useState(window.outerWidth)
+    // objeto a ser usada para a criação dos botões
+    
+    useEffect(() => {
+        // ao renderizar
+        // de acordo com o número de cryptos no objeto ele definirá a quantidade de colunas e linhas
+        (() => {
+            const buttonContainer = document.querySelector(".button-container").style
+            const cryptoQtySqrt = Math.ceil(Math.sqrt(Object.keys(cryptos).length))
+
+            // colunas de acordo com o tamanho da tela ou raiz quadrada do tamanho do objeto com limite de 5
+            const column = windowWidth <= 600 && cryptoQtySqrt > 2 ? 3 : cryptoQtySqrt > 5 ? 5 : cryptoQtySqrt
+            const row = cryptoQtySqrt
+            buttonContainer.gridTemplateColumns = `repeat(${column}, 100px)`
+            buttonContainer.gridTemplateRows = `repeat(${row}, 100px)`
+
+        })()
+    }, [windowWidth])
+
+    useEffect(() => {
+        // contra o redimensionamento da janela
+        function resizeSetter() {
+            setWindowWidth(window.outerWidth)
+        }
+    
+        window.addEventListener('resize', resizeSetter)
+    })
+
+    
     const HandleClickCrypto = (cryptoId) => {
         cryptoData(cryptoId)
     }

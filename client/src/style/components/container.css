@@ -8,9 +8,8 @@
 
 .button-container {
   display: grid;
-  grid-template-columns: repeat(3, 100px);
-  grid-template-rows: repeat(3, 100px);
   grid-gap: 15px;
+  padding-bottom: 15px;
 }
 
 .info-container {
