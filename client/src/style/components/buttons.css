@@ -16,8 +16,7 @@
 .btn p {
   color: transparent;
   transition: all 500ms;
-  position: fixed;
-  transform: translateY(150%);
+  display: none;
   font-weight: bold;
 }
 
@@ -36,11 +35,12 @@
 .btn:hover img {
   width: 50%;
   height: 50%;
-  transform: translateY(-25%);
+  transform: translateY(-15%);
 }
 
 .btn:hover p {
   color: rgb(var(--simple-text));
+  display: block;
 }
 
 .btn-info {
