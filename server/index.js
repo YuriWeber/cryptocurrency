@@ -8,7 +8,7 @@ const app = express()
 // define a url e a chave da api
 const api = axios.create({
     baseURL: 'https://pro-api.coinmarketcap.com/v1/',
-    headers: {'X-CMC_PRO_API_KEY': '700fde89-f884-4ad0-843c-bd825897c954'},
+    headers: {'X-CMC_PRO_API_KEY': 'INSIRA SUA CHAVE'},
 })
 
 app.use(cors())
